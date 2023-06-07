@@ -6,27 +6,73 @@
 
 
     .blockContainer {
-        
-        
-
         .blockUp {
             background-color: white;
             border-radius: 4px;
             max-width: 640px;
             padding: 25px 60px 35px 30px;
+
             h1 {
                 color: hsl(179, 62%, 42%);
                 font-size: 18px;
                 font-weight: bold;
             }
-            h2{
+
+            h2 {
                 color: var(--bright-yellow);
                 margin-bottom: 15px;
                 margin-top: 30px;
             }
+
             p {
-                line-height: 25px;
-                color: rgba(128, 128, 128, 0.692);
+                line-height: 27px;
+                color: rgba(128, 128, 128, 0.76);
+            }
+        }
+
+        .blockDown {
+            align-items: center;
+            display: flex;
+            width: 100%;
+
+            .blockDownLeft {
+                background-color: hsl(179, 61%, 42%);
+                border-radius: 5px;
+                padding: 30px 40px 34px 30px;
+                width: 50%;
+
+                h3 {
+                    color: white;
+                    margin-bottom: 16px;
+                }
+
+                .blockDownLeft__price {
+                    align-items: center;
+                    color: rgba(255, 255, 255, 0.486);
+                    gap: 10px;
+                    display: flex;
+
+                    span {
+                        color: white;
+                        font-size: 30px;
+                        font-weight: 700;
+                    }
+                }
+
+                .blockDownLeft__description {
+                    color: white;
+                    margin: 8px 0 20px 0;
+                }
+
+                button {
+                    background-color: var(--bright-yellow);
+                    box-shadow: 1px -1px 24px -7px rgba(0, 0, 0, 0.75);
+                    color: white;
+                    border: 0px;
+                    border-radius: 3px;
+                    padding: 10px 0;
+                    width: 100%;
+                }
             }
         }
     }

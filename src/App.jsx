@@ -15,8 +15,8 @@ function App() {
         <div className={styles.blockDown}>
           <div className={styles.blockDownLeft}>
             <h3>Monthly Subscription</h3>
-            <p><span>$29</span> per month</p>
-            <p>Full access for less than $1 a day</p>
+            <p className={styles.blockDownLeft__price}><span>$29</span> per month</p>
+            <p className={styles.blockDownLeft__description}>Full access for less than $1 a day</p>
             <button>Sign Up</button>
           </div>
           <div className={styles.blockDownRight}>
