@@ -6,6 +6,7 @@
 
 
     .blockContainer {
+
         .blockUp {
             background-color: white;
             border-radius: 4px;
@@ -31,13 +32,12 @@
         }
 
         .blockDown {
-            align-items: center;
             display: flex;
             width: 100%;
 
             .blockDownLeft {
                 background-color: hsl(179, 61%, 42%);
-                border-radius: 5px;
+                border-radius: 0px 0px 0px 5px;
                 padding: 30px 40px 34px 30px;
                 width: 50%;
 
@@ -61,17 +61,37 @@
 
                 .blockDownLeft__description {
                     color: white;
-                    margin: 8px 0 20px 0;
+                    margin: 8px 0 43px 0;
                 }
 
                 button {
                     background-color: var(--bright-yellow);
                     box-shadow: 1px -1px 24px -7px rgba(0, 0, 0, 0.75);
                     color: white;
+                    cursor: pointer;
                     border: 0px;
                     border-radius: 3px;
-                    padding: 10px 0;
+                    padding: 16px 0;
                     width: 100%;
+                }
+            }
+
+            .blockDownRight {
+                background-color: hsl(179, 64%, 49%);
+                border-radius: 0px 0px 5px 0px;
+                height: max-content;
+                width: 50%;
+                padding: 30px 40px 40px 30px;
+
+                h3 {
+                    color: white;
+                    margin-bottom: 18px;
+                }
+
+                p {
+                    color: rgba(255, 255, 255, 0.644);
+                    margin-bottom: 5px;
+                    font-size: 15px;
                 }
             }
         }
